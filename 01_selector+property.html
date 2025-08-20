@@ -17,14 +17,45 @@
       strong {
         color: pink;
       }
+
+      input {
+        font-size: 20px;
+        
+      }
+      input[type="password"] {
+        font-size: 18px;
+      }
+      a {
+        text-decoration: none;
+
+      }
+      a[target="_blank"] {
+        color: orange;
+        text-decoration: line-through;
+      }
     </style>
   </head>
-  <body>
     <h1 id="brand">구별을 위한 선택자 id, 1개만 존재하는 걸 '권장'</h1>
     <p id="brand">그런갑다 만들 때 신경써줘야함</p>
     <p class="lead">재사용을 위한 클래스 예시</p>
     <h6 class="lead">재사용했습니다</h6>
     <p class="alert">경고 메시지</p>
     <strong>정말 세보이지?</strong>
+
+    <br />
+    <label>
+      <input type="text" placeholder="아이디" />
+    </label>
+    <label>
+      <input type="password" placeholder="비밀번호" />
+    </label>
+    <p>
+      <!-- _blank : 새 창 띄우기 -->
+      <a href="https://naver.com" target="_blank">네이버 새 창 링크</a>
+      <a href="https://naver.com" target="_self">네이버 현재 탭(창) 바꾸기</a>
+    </p>
+
+
+
   </body>
 </html>
